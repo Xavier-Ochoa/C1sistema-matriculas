@@ -19,9 +19,9 @@ app.use(
     origin: [
       'https://c1sistema-matriculas.vercel.app',
       'http://localhost:5173',
-      'http://localhost:3000',      
-      process.env.URL_FRONTEND || "*"
-    ],
+      'http://localhost:3000',
+      process.env.URL_FRONTEND,
+    ].filter(Boolean),
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
