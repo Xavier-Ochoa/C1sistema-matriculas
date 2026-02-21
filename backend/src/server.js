@@ -18,6 +18,7 @@ app.use(
   cors({
     origin: [
       'https://c1sistema-matriculas.vercel.app',
+      'https://c1sistema-matriculasfront.vercel.app',
       'http://localhost:5173',
       'http://localhost:3000',
       process.env.URL_FRONTEND,
