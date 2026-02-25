@@ -18,9 +18,9 @@ app.use(
   cors({
     origin: [
       'https://c1sistema-matriculas.vercel.app',
-      'https://c1-matriculas-3lwi.vercel.app',
+      'https://c1-matriculas-3lwi.vercel.app/api',
       'http://localhost:5173',
-      'http://localhost:3000',
+      'https://c1-matriculas-3lwi.vercel.app',
       process.env.URL_FRONTEND,
     ].filter(Boolean),
     methods: ["GET", "POST", "PUT", "DELETE"],
